@@ -1,0 +1,202 @@
+/* Reset mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background: url(../images/sea2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  padding: 20px;
+} */
+
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button, #delete, #update {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 20px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+.center-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#delete {
+  background-color: #f44336;
+  color: white;
+}
+
+#delete:hover {
+  background-color: #d32f2f;
+}
+
+#update {
+  background-color: #2196F3;
+  color: white;
+}
+
+#update:hover {
+  background-color: #1976D2;
+}
+
+#delete a, #update a {
+  color: white;
+  text-decoration: none;
+}
+
+#delete a:hover, #update a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-container th, .table-container td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-container .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.table-container .button a {
+  color: white;
+  text-decoration: none;
+}
+
+.table-container .button:hover {
+  background-color: #45a049;
+}
+
+.table-container .action-button {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.table-container #delete {
+  background-color: #f44336;
+}
+
+.table-container #delete:hover {
+  background-color: #d32f2f;
+}
+
+.table-container #update {
+  background-color: blue;
+}
+
+.table-container #update:hover {
+  background-color: #0056b3;
+}
+
+.table-container .center-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.table-container .center-buttons .button {
+  margin: 10px;
+}

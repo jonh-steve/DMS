@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký Vấn Đề Cơ Sở Vật Chất</title>
+  <style>
+    /* Reset mặc định của trình duyệt */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url(../images/sea2.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Trang Đăng Ký Vấn Đề Cơ Sở Vật Chất</h1>
+    <form action="submit_fp.php" method="post">
+      <!-- Số Phòng -->
+      <div class="form-group">
+        <label for="Room_Number">Số Phòng</label>
+        <input type="text" id="Room_Number" name="Room_Number" required>
+      </div>
+      <!-- Quạt Hỏng (Chưa Giải Quyết) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Un">Quạt Hỏng (Chưa Giải Quyết)</label>
+        <input type="number" id="Damaged_Fan_Un" name="Damaged_Fan_Un">
+      </div>
+      <!-- Quạt Hỏng (Đang Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Pro">Quạt Hỏng (Đang Xử Lý)</label>
+        <input type="number" id="Damaged_Fan_Pro" name="Damaged_Fan_Pro">
+      </div>
+      <!-- Quạt Hỏng (Đã Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Sol">Quạt Hỏng (Đã Xử Lý)</label>
+        <input type="number" id="Damaged_Fan_Sol" name="Damaged_Fan_Sol">
+      </div>
+      <!-- Đèn Hỏng (Chưa Giải Quyết) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Un">Đèn Hỏng (Chưa Giải Quyết)</label>
+        <input type="number" id="Damaged_Light_Un" name="Damaged_Light_Un">
+      </div>
+      <!-- Đèn Hỏng (Đang Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Pro">Đèn Hỏng (Đang Xử Lý)</label>
+        <input type="number" id="Damaged_Light_Pro" name="Damaged_Light_Pro">
+      </div>
+      <!-- Đèn Hỏng (Đã Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Sol">Đèn Hỏng (Đã Xử Lý)</label>
+        <input type="number" id="Damaged_Light_Sol" name="Damaged_Light_Sol">
+      </div>
+      <!-- Nút Gửi -->
+      <input type="submit" value="Gửi">
+    </form>
+  </div>
+</body>
+
+</html>
