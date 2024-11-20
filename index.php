@@ -364,7 +364,7 @@
 
     <!-- Galary section start-->
     <div class="container-fluid pt-5 pb-3" id="Gallery" style="margin-top:20px">
-        <h1 class=" heading">Galary</h1>
+        <h1 class=" heading">Diểm nổi bật </h1>
         <div class="row">
             <div class="col-12 text-center mb-2">
                 <ul class="list-inline mb-4" id="portfolio-flters">
@@ -498,7 +498,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/ruti.jpg" alt="">
-                            <h2 style="color:blue">Ruti Per piece : 10 BDT</h2>
+                            <h2 style="color:blue">Ruti Per piece : 1.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/ruti.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -509,7 +509,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="breakfast">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/vaji.jpg" alt="">
-                            <h2 style="color:blue">Vaji: 20 BDT</h2>
+                            <h2 style="color:blue">Vaji: 2.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/vaji.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -520,7 +520,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="breakfast">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/dall.jpg" alt="">
-                            <h2 style="color:blue">Dall: 15 BDT</h2>
+                            <h2 style="color:blue">Dall: 1.500 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/dall.jpg" data-lightbox="portfolio">
 
@@ -532,7 +532,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="launch">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/rice.jpg" alt="">
-                            <h2 style="color:blue">Rice: 20 BDT</h2>
+                            <h2 style="color:blue">Rice: 2.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/rice.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -543,7 +543,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="launch">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/fish.jpg" alt="">
-                            <h2 style="color:blue">Fish: 50 BDT</h2>
+                            <h2 style="color:blue">Fish: 5.000 vnd</h2>
 
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/fish.jpg" data-lightbox="portfolio">
@@ -555,7 +555,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="launch">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/murgi.jpg" alt="">
-                            <h2 style="color:blue">Chicken: 50 BDT</h2>
+                            <h2 style="color:blue">Chicken: 5.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/murgi.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -566,7 +566,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="dinner">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/nan.avif" alt="">
-                            <h2 style="color:blue">Nan: 30 BDT</h2>
+                            <h2 style="color:blue">Nan: 3.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/canteen1.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -577,7 +577,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="dinner">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/grill.jpg" alt="">
-                            <h2 style="color:blue">Checken Grill Full: 300 BDT</h2>
+                            <h2 style="color:blue">Checken Grill Full: 30.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/canteen2.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -588,7 +588,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="dinner">
                         <div class="position-relative overflow-hidden mb-2">
                             <img class="img-fluid rounded w-100" src="images/egg.jpg" alt="">
-                            <h2 style="color:blue">Egg: 20 BDT</h2>
+                            <h2 style="color:blue">Egg: 2.000 vnd</h2>
                             <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                                 <a href="images/canteen3.jpg" data-lightbox="portfolio">
                                     <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -602,130 +602,107 @@
     </div>
     <!-- Dining End -->
 
+    
 
     <!-- Contact Start -->
-
-
     <section id="contact" class="contact">
-        <h1 class=" heading">Contact</h1>
+        <h1 class="heading">Liên hệ</h1>
         <div class="container" id="cont">
-
             <div class="section-title" id="sec_cond">
                 <div class="row" data-aos="fade-in">
-
                     <div class="col-lg-5 d-flex align-items-stretch">
                         <div class="info">
                             <div class="address">
                                 <i class="bx bx-home"></i>
-                                <h4>Location:</h4>
-                                <p>Jahanginagar University,savar</p>
+                                <h4>Địa chỉ:</h4>
+                                <p>Kí túc xá Sổa Barkat, Đại học Jahangirnagar, Savar</p>
                             </div>
-
                             <div class="mail">
                                 <i class="bx bx-envelope"></i>
-                                <h4>mail:</h4>
+                                <h4>Email:</h4>
                                 <p>juhall@gmail.com</p>
                             </div>
-
                             <div class="phone">
                                 <i class="bx bxl-skype"></i>
-                                <h4>Call:</h4>
+                                <h4>Điện thoại:</h4>
                                 <p>02224491052</p>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.1760830597646!2d90.26664878884148!3d23.879370153102187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e99900000001%3A0x2debf98e950c72ca!2sJahangirnagar%20University!5e0!3m2!1sen!2sbd!4v1680456384141!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.1760830597646!2d90.2620247!3d23.8823987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e99900000001%3A0x2debf98e950c72ca!2sJahangirnagar%20University!5e0!3m2!1sen!2sbd!4v1680456384141!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-
                     </div>
-
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form action="message/message.php" method="post" role="form" class="php-email-form">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="Stu_ID" class="message">Student ID</label>
-                                    <input type="text" name="Stu_ID" class="form-control" id="Stu_ID" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <label for="Stu_ID" class="message">Mã sinh viên:</label>
+                                    <input type="text" name="Stu_ID" class="form-control" id="Stu_ID" data-rule="minlen:4" data-msg="Vui lòng nhập ít nhất 4 ký tự" />
                                     <div class="validate"></div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="Name" class="message">Student Name</label>
-                                    <input type="text" class="form-control" name="Name" id="Name" data-rule="Name" data-msg="Please enter a valid email" />
+                                    <label for="Name" class="message">Tên sinh viên:</label>
+                                    <input type="text" class="form-control" name="Name" id="Name" data-rule="Name" data-msg="Vui lòng nhập tên hợp lệ" />
                                     <div class="validate"></div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="Room_Num" class="message">Room Number</label>
-                                <input type="text" class="form-control" name="Room_Num" id="Room_Num" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <label for="Room_Num" class="message">Số phòng:</label>
+                                <input type="text" class="form-control" name="Room_Num" id="Room_Num" data-rule="minlen:4" data-msg="Vui lòng nhập ít nhất 8 ký tự của môn học" />
                                 <div class="validate"></div>
                             </div>
                             <div class="form-group">
-                                <label for="Messages" class="message">Message</label>
-                                <textarea type="text" class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <label for="Messages" class="message">Nội dung:</label>
+                                <textarea type="text" class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Vui lòng viết điều gì đó cho chúng tôi"></textarea>
                                 <div class="validate"></div>
                             </div>
                             <div class="mb-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading">Đang tải...</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn!</div>
                             </div>
-                            <div class="text-center" id="button_mes"><button type="submit">Send Message</button></div>
+                            <div class="text-center" id="button_mes"><button type="submit">Gửi tin nhắn</button></div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <!-- Contact End -->
-
-
+    
     <!-- footer start -->
-
     <section class="footer" id="footer">
-
         <div class="box-container">
-
             <div class="box">
-                <h3>quick links</h3>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> home </a>
-                <a href="#provost" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Provost </a>
-                <a href="#about" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Student </a>
-                <a href="#Gallery" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Gallery </a>
-                <a href="#contact" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Contact</a>
+                <h3>Liên kết nhanh</h3>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Trang chủ </a>
+                <a href="#provost" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Hiệu trưởng </a>
+                <a href="#about" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Sinh viên </a>
+                <a href="#Gallery" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Thư viện </a>
+                <a href="#contact" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Liên hệ</a>
             </div>
-
             <div class="box">
-                <h3>Useful Links</h3>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> NOC &GO </a>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Download Form </a>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Result </a>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Reaserch Work </a>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Office </a>
+                <h3>Liên kết hữu ích</h3>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> NOC & GO </a>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Tải biểu mẫu </a>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Kết quả </a>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Nghiên cứu </a>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-chevron-right"></i> Văn phòng </a>
             </div>
-
             <div class="box">
-                <h3>contact info</h3>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-phone" style="text-decoration: none;"></i> 1324 </a>
-                <a href="#" style="text-decoration: none;"> <i class="fas fa-phone" style="text-decoration: none;"></i> 02224491045-51 </a>
+                <h3>Thông tin liên hệ</h3>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-phone"></i> 1324 </a>
+                <a href="#" style="text-decoration: none;"> <i class="fas fa-phone"></i> 02224491045-51 </a>
                 <a href="#" style="text-decoration: none;"> <i class="fas fa-envelope"></i> ssbhall@gmail.com </a>
-                <a href="https://www.google.com/maps/place/Shaheed+Salam+Barkat+Hall/@23.8823987,90.2620247,17z/data=!3m1!4b1!4m5!3m4!1s0x3755e9a02b7f1e89:0x6d20e40f3a231f37!8m2!3d23.8823987!4d90.2642134" style="text-decoration: none;"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
+                <a href="https://www.google.com/maps/place/Shaheed+Salam+Barkat+Hall/@23.8823987,90.2620247,17z/data=!3m1!4b1!4m5!3m4!1s0x3755e9a02b7f1e89:0x6d20e40f3a231f37!8m2!3d23.8823987!4d90.2642134" style="text-decoration: none;"> <i class="fas fa-map-marker-alt"></i> Kí túc xá Sổa Barkat, Đại học Jahangirnagar, Savar, Bangladesh. </a>
             </div>
-
             <div class="box">
-                <h3>follow us</h3>
-                <a target="_blank" href="https://www.facebook.com/ssbhju" target="_blank" style="text-decoration: none;"> <i class="fab fa-facebook-f"></i> facebook </a>
-                <a href="#" style="text-decoration: none;"> <i class="fab fa-twitter"></i> twitter </a>
-                <a href="#" style="text-decoration: none;"> <i class="fab fa-instagram"></i> instagram </a>
-                <a href="#" style="text-decoration: none;"> <i class="fab fa-linkedin"></i> linkedin </a>
-                <a href="#" style="text-decoration: none;"> <i class="fab fa-pinterest"></i> pinterest </a>
+                <h3>Theo dõi chúng tôi</h3>
+                <a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-
         </div>
-
-
-
     </section>
-
-
-
     <!-- footer end -->
     <!-- footer -->
     <div class="container-fluid bg-dark text-white mt-5 py-1 px-sm-1 px-md-5" style="height: 150px;">
@@ -737,7 +714,7 @@
                 <a class="btn btn-light btn-social" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="credit">
-                <h2>created by <span>Group 8</span> | @all rights reserved</h2>
+                <h2>Được tạo bởi <span>Nhóm 8</span> | @Tất cả các quyền được bảo lưu</h2>
             </div>
         </div>
     </div>

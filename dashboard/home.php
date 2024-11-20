@@ -254,7 +254,7 @@
           <div class="infocard">
                <h1 id="hall">Hệ thống quản lý ký túc xá</h1>
 
-               <a href="../Provost/DispProvost.php" rel="" style="text-decoration:none">
+               <a href="../Hall/DispHall.php" rel="" style="text-decoration:none">
                     <div class="cardspecific" style="width: 26%;">
                          Ký túc xá 
                          <div class="number">

@@ -1,102 +1,131 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html lang="vi">
 
- <head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Data From Database</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url(../images/sea.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-   <title> Fetch Data From Database </title>
+    h2 {
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
 
-   <style>
-     .tdr {
-       text-align: center;
-     }
+    table {
+      width: 100%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
 
-     body {
-       background-image: url(../images/sea.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-     }
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
 
-     .button {
-       background-color: #4CAF50;
-       border: none;
-       color: white;
-       padding: 10px 25px;
-       text-align: center;
-       margin-top: 60px;
-       border-radius: 5px;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 16px;
-     }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
 
-     .table1 {
-       margin-top: 70px;
-     }
+    td {
+      background-color: #f2f2f2;
+    }
 
-     #delete {
-       background-color: #f44336;
-       color: black;
-       border-radius: 9px 9px;
+    .button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-     }
+    .button:hover {
+      background-color: #45a049;
+    }
 
-     #link1 {
-       color: black;
-       text-decoration: none;
-       font-size: 15px;
-     }
+    .delete-btn {
+      background-color: #f44336;
+      color: white;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
 
-     #update {
-       background-color: blue;
-       color: black;
-       border-radius: 9px 9px;
-     }
-   </style>
- </head>
+    .delete-btn:hover {
+      background-color: #d32f2f;
+    }
 
- <body>
-   <table align="center" class="table1" border="3px solid black" style="width:1000px; line-height:40px;">
-     <tr>
-       <th colspan="8">
-         <h2>Provost Record</h2>
-       </th>
-     </tr>
-     <th> Provost ID </th>
-     <th>Phone </th>
-     <th> Name </th>
-     <th> Address </th>
-     <th> Email </th>
-     <th> Designation</th>
-     <th> Operations</th>
-     </tr>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+</head>
 
-     <?php
+<body>
+
+  <h2>Provost Record</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Số điện thoại</th>
+        <th>Họ và Tên</th>
+        <th>Địa chỉ</th>
+        <th>Email</th>
+        <th>Designation</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
       include 'connection.php';
-      $sql = "select * from Provost ";
+      $sql = "SELECT * FROM Provost";
       $query = mysqli_query($conn, $sql);
       while ($row1 = mysqli_fetch_array($query)) {
       ?>
-       <tr>
-         <td class="tdr"><?php echo $row1['P_ID']; ?></td>
-         <td class="tdr"><?php echo $row1['Phone']; ?></td>
-         <td class="tdr"><?php echo $row1['Name']; ?></td>
-         <td class="tdr"><?php echo $row1['Address']; ?></td>
-         <td class="tdr"><?php echo $row1['Email']; ?></td>
-         <td class="tdr"><?php echo $row1['Designation']; ?></td>
-         <td style="width: 140px;">
-           <center><button id="delete"><a href="Delete.php?P_ID=<?php echo $row1["P_ID"]; ?>" id="link1" style="text-align:center">Delete</a></button></center>
-         </td>
-       </tr>
-     <?php
+        <tr>
+          <td><?php echo $row1['P_ID']; ?></td>
+          <td><?php echo $row1['Phone']; ?></td>
+          <td><?php echo $row1['Name']; ?></td>
+          <td><?php echo $row1['Address']; ?></td>
+          <td><?php echo $row1['Email']; ?></td>
+          <td><?php echo $row1['Designation']; ?></td>
+          <td>
+            <a href="Delete.php?P_ID=<?php echo $row1['P_ID']; ?>" class="delete-btn">Delete</a>
+          </td>
+        </tr>
+      <?php
       }
       ?>
+    </tbody>
+  </table>
 
-   </table>
+  <div class="center">
+    <a href="provost.html" class="button">Thêm </a>
+    <a href="../dashboard/home.php" class="button">TRang chính</a>
+  </div>
 
-   <center>
-     <button class="button"> <a href="provost.html" style="text-decoration: none;">INSERT</a> </button>
-     <button class="button"> <a href="../dashboard/home.php" style="text-decoration: none;">Home Page</a> </button>
-   </center>
- </body>
+</body>
 
- </html>
+</html>
