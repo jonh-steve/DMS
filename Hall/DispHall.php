@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -12,54 +12,58 @@
       background-repeat: no-repeat;
       background-size: cover;
       font-family: Arial, sans-serif;
+      padding: 20px;
     }
   </style>
 </head>
 
 <body>
-  <table>
-    <tr>
-      <th colspan="6">
-        <h2>Hall Record</h2>
-      </th>
-    </tr>
-    <tr>
-    <th>Mã Phòng học</th>
-      <th>Tên Phòng học</th>
-      <th>Tổng số chỗ ngồi</th>
-      <th>Số chỗ ngồi còn trống</th>
-      <th>Số sinh viên</th>
-      <th>Thao tác</th>
-    </tr>
 
-    <?php
-    include 'connection.php';
-    $sql = "SELECT * FROM hall";
-    $query = mysqli_query($conn, $sql);
+  <div class="table-container">
+    <h2>Hall Record</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mã Phòng học</th>
+          <th>Tên Phòng học</th>
+          <th>Tổng số chỗ ngồi</th>
+          <th>Số chỗ ngồi còn trống</th>
+          <th>Số sinh viên</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        include 'connection.php';
+        $sql = "SELECT * FROM hall";
+        $query = mysqli_query($conn, $sql);
 
-    if ($query && mysqli_num_rows($query) > 0) {
-        while ($row = mysqli_fetch_assoc($query)) {
-            echo "<tr>
-                <td>{$row['H_ID']}</td>
-                <td>{$row['H_Name']}</td>
-                <td>{$row['T_Seat']}</td>
-                <td>{$row['A_Seat']}</td>
-                <td>{$row['N_Student']}</td>
-                <td class='actions'>
-                  <button id='delete'><a href='Delete.php?H_ID={$row['H_ID']}'>Delete</a></button>
-                </td>
-              </tr>";
+        if ($query && mysqli_num_rows($query) > 0) {
+            while ($row = mysqli_fetch_assoc($query)) {
+                echo "<tr>
+                        <td>{$row['H_ID']}</td>
+                        <td>{$row['H_Name']}</td>
+                        <td>{$row['T_Seat']}</td>
+                        <td>{$row['A_Seat']}</td>
+                        <td>{$row['N_Student']}</td>
+                        <td class='actions'>
+                          <button id='delete'><a href='Delete.php?H_ID={$row['H_ID']}'>Xóa</a></button>
+                        </td>
+                      </tr>";
+            }
+        } else {
+            echo "<tr><td colspan='6'>Không tìm thấy bản ghi nào.</td></tr>";
         }
-    } else {
-        echo "<tr><td colspan='6'>No records found.</td></tr>";
-    }
-    ?>
-  </table>
-
-  <div style="text-align: center;">
-    <button class="button"><a href="Hall.html">Thêm </a></button>
-    <button class="button"><a href="../dashboard/home.php">TRang chủ</a></button>
+        ?>
+      </tbody>
+    </table>
   </div>
+
+  <div class="center-buttons">
+    <a href="Hall.html" class="button">Thêm</a>
+    <a href="../dashboard/home.php" class="button">Trang chủ</a>
+  </div>
+
 </body>
 
 </html>

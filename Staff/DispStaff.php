@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     body {
-      background-image: url(../images/g1.jpg);
+      background-image: url("../images/g1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       font-family: Arial, sans-serif;
@@ -16,37 +16,7 @@
       padding: 0;
     }
 
-
-    .operation-btns {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .operation-btns a {
-      padding: 5px 10px;
-      background-color: #f44336;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .operation-btns a:hover {
-      background-color: #d32f2f;
-    }
-
-    .center-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    div a {
-      text-decoration: none;
-      color: black;
-    }
+   
   </style>
 </head>
 

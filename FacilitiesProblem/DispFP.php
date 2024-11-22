@@ -16,45 +16,7 @@
       color: #333;
     }
 
-    /* Nút hành động */
-	
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      margin: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .button a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .button:hover {
-      background-color: #45a049;
-    }
-
-    .action-button {
-      display: inline-flex;
-      gap: 10px;
-      justify-content: center;
-	}
-    .center-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .center-buttons .button {
-      margin: 10px;
-    } 
+   
   </style>
 </head>
 

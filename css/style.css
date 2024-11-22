@@ -5,14 +5,16 @@
   box-sizing: border-box;
 }
 
-/* body {
+/* Định dạng cho body */
+body {
   font-family: Arial, sans-serif;
-  background: url(../images/sea2.jpg) no-repeat center center fixed;
+  background: url("../images/g1.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #333;
-  padding: 20px;
-} */
+  margin: 0;
+  padding: 0;
+}
 
+/* Định dạng chung cho bảng */
 table {
   width: 100%;
   max-width: 1000px;
@@ -44,6 +46,7 @@ tr:hover {
   background-color: #f1f1f1;
 }
 
+/* Định dạng cho các nút và liên kết */
 .button, #delete, #update {
   padding: 8px 16px;
   border: none;
@@ -60,19 +63,15 @@ tr:hover {
   margin-top: 20px;
 }
 
-.button a {
+.button , #delete , #update   {
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* Loại bỏ gạch chân */
 }
 
 .button:hover {
   background-color: #45a049;
 }
-.center-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 #delete {
   background-color: #f44336;
   color: white;
@@ -91,33 +90,35 @@ tr:hover {
   background-color: #1976D2;
 }
 
-#delete a, #update a {
+/* Định dạng cho các nút hành động */
+.operation-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.operation-btns a {
+  padding: 5px 10px;
+  background-color: #f44336;
   color: white;
+  border-radius: 5px;
   text-decoration: none;
 }
 
-#delete a:hover, #update a:hover {
-  text-decoration: underline;
+.operation-btns a:hover {
+  background-color: #d32f2f;
 }
 
-h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-.center {
+/* Định dạng các phần chứa nút */
+.center-container, .table-container .center-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.center-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-
+  margin-top: 20px;
+  gap: 10px;
 }
 
+/* Định dạng phần hiển thị bảng trong container */
 .table-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -166,11 +167,6 @@ h2 {
   display: inline-block;
 }
 
-.table-container .button a {
-  color: white;
-  text-decoration: none;
-}
-
 .table-container .button:hover {
   background-color: #45a049;
 }
@@ -197,13 +193,17 @@ h2 {
   background-color: #0056b3;
 }
 
-.table-container .center-buttons {
+/* Căn giữa cho các phần điều hướng */
+.center-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.table-container .center-buttons .button {
-  margin: 10px;
+/* Định dạng tiêu đề */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
