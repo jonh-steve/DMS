@@ -1,80 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Trang Đăng Ký</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="row col-md-6 col-md-offset-3">
-        <div class="panel panel-primary">
-          <div class="panel-heading text-center">
-            <h1>THÔNG TIN KÝ TÚC XÁ</h1>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="panel-header">
+        <h1>THÔNG TIN KÝ TÚC XÁ</h1>
+      </div>
+      <div class="panel-body">
+        <form action="Hall.php" method="post">
+          <!-- Mã Ký Túc Xá -->
+          <div class="form-group">
+            <label for="H_ID">Mã Ký Túc Xá</label>
+            <input
+              type="number"
+              id="H_ID"
+              name="H_ID"
+              required
+              aria-label="Mã Ký Túc Xá"
+              placeholder="Nhập mã ký túc xá"
+            />
           </div>
-          <div class="panel-body">
-            <form action="Hall.php" method="post">
-              <div class="form-group">
-                <label for="H_ID">Mã Ký Túc Xá</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="H_ID"
-                  name="H_ID"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="H_Name">Tên Ký Túc Xá</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="H_Name"
-                  name="H_Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="T_Seat">Tổng Số Chỗ</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="T_Seat"
-                  name="T_Seat"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="A_Seat">Số Chỗ Còn Trống</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="A_Seat"
-                  name="A_Seat"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="N_Student">Số Lượng Sinh Viên</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="N_Student"
-                  name="N_Student"
-                  required
-                />
-              </div>
-              <input type="submit" class="btn btn-primary" value="GỬI" />
-            </form>
+
+          <!-- Tên Ký Túc Xá -->
+          <div class="form-group">
+            <label for="H_Name">Tên Ký Túc Xá</label>
+            <input
+              type="text"
+              id="H_Name"
+              name="H_Name"
+              required
+              aria-label="Tên Ký Túc Xá"
+              placeholder="Nhập tên ký túc xá"
+            />
           </div>
-          <div class="panel-footer text-right">
-            <button><a href="DispHall.php" class="btn btn-primary"><b>Quay lại</b></a></button>
-            <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+
+          <!-- Tổng Số Chỗ -->
+          <div class="form-group">
+            <label for="T_Seat">Tổng Số Chỗ</label>
+            <input
+              type="number"
+              id="T_Seat"
+              name="T_Seat"
+              required
+              aria-label="Tổng số chỗ"
+              placeholder="Nhập tổng số chỗ"
+            />
           </div>
-        </div>
+
+          <!-- Số Chỗ Còn Trống -->
+          <div class="form-group">
+            <label for="A_Seat">Số Chỗ Còn Trống</label>
+            <input
+              type="number"
+              id="A_Seat"
+              name="A_Seat"
+              required
+              aria-label="Số chỗ còn trống"
+              placeholder="Nhập số chỗ còn trống"
+            />
+          </div>
+
+          <!-- Số Lượng Sinh Viên -->
+          <div class="form-group">
+            <label for="N_Student">Số Lượng Sinh Viên</label>
+            <input
+              type="number"
+              id="N_Student"
+              name="N_Student"
+              required
+              aria-label="Số lượng sinh viên"
+              placeholder="Nhập số lượng sinh viên"
+            />
+          </div>
+
+          <button type="submit">GỬI</button>
+        </form>
+      </div>
+      <div class="panel-footer">
+        <button><a href="DispHall.php"><b>Quay lại</b></a></button>
+        <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
       </div>
     </div>
+  </div>
 
-    <!-- Dấu * sẽ có màu đỏ khi trường input trống và màu bình thường (inherit) khi có giá trị.  -->
-<script src="../js/dot.js"></script>
+  <script src="../js/dot.js"></script>
 </body>
+
 </html>

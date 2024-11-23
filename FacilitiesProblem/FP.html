@@ -33,6 +33,8 @@
     h1 {
       text-align: center;
       margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     form {
@@ -41,29 +43,33 @@
     }
 
     .form-group {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     label {
       font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 16px;
     }
 
     input[type="text"],
     input[type="number"] {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       border-radius: 5px;
       border: 1px solid #ccc;
+      font-size: 16px;
     }
 
     input[type="submit"] {
       background-color: #4CAF50;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      font-size: 18px;
     }
 
     input[type="submit"]:hover {
@@ -79,37 +85,37 @@
       <!-- Số Phòng -->
       <div class="form-group">
         <label for="Room_Number">Số Phòng</label>
-        <input type="text" id="Room_Number" name="Room_Number" required>
+        <input type="text" id="Room_Number" name="Room_Number" required placeholder="Nhập số phòng">
       </div>
       <!-- Quạt Hỏng (Chưa Giải Quyết) -->
       <div class="form-group">
         <label for="Damaged_Fan_Un">Quạt Hỏng (Chưa Giải Quyết)</label>
-        <input type="number" id="Damaged_Fan_Un" name="Damaged_Fan_Un">
+        <input type="number" id="Damaged_Fan_Un" name="Damaged_Fan_Un" placeholder="Nhập số quạt hỏng chưa giải quyết">
       </div>
       <!-- Quạt Hỏng (Đang Xử Lý) -->
       <div class="form-group">
         <label for="Damaged_Fan_Pro">Quạt Hỏng (Đang Xử Lý)</label>
-        <input type="number" id="Damaged_Fan_Pro" name="Damaged_Fan_Pro">
+        <input type="number" id="Damaged_Fan_Pro" name="Damaged_Fan_Pro" placeholder="Nhập số quạt hỏng đang xử lý">
       </div>
       <!-- Quạt Hỏng (Đã Xử Lý) -->
       <div class="form-group">
         <label for="Damaged_Fan_Sol">Quạt Hỏng (Đã Xử Lý)</label>
-        <input type="number" id="Damaged_Fan_Sol" name="Damaged_Fan_Sol">
+        <input type="number" id="Damaged_Fan_Sol" name="Damaged_Fan_Sol" placeholder="Nhập số quạt hỏng đã xử lý">
       </div>
       <!-- Đèn Hỏng (Chưa Giải Quyết) -->
       <div class="form-group">
         <label for="Damaged_Light_Un">Đèn Hỏng (Chưa Giải Quyết)</label>
-        <input type="number" id="Damaged_Light_Un" name="Damaged_Light_Un">
+        <input type="number" id="Damaged_Light_Un" name="Damaged_Light_Un" placeholder="Nhập số đèn hỏng chưa giải quyết">
       </div>
       <!-- Đèn Hỏng (Đang Xử Lý) -->
       <div class="form-group">
         <label for="Damaged_Light_Pro">Đèn Hỏng (Đang Xử Lý)</label>
-        <input type="number" id="Damaged_Light_Pro" name="Damaged_Light_Pro">
+        <input type="number" id="Damaged_Light_Pro" name="Damaged_Light_Pro" placeholder="Nhập số đèn hỏng đang xử lý">
       </div>
       <!-- Đèn Hỏng (Đã Xử Lý) -->
       <div class="form-group">
         <label for="Damaged_Light_Sol">Đèn Hỏng (Đã Xử Lý)</label>
-        <input type="number" id="Damaged_Light_Sol" name="Damaged_Light_Sol">
+        <input type="number" id="Damaged_Light_Sol" name="Damaged_Light_Sol" placeholder="Nhập số đèn hỏng đã xử lý">
       </div>
       <!-- Nút Gửi -->
       <input type="submit" value="Gửi">

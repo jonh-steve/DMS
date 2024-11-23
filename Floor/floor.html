@@ -3,76 +3,79 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang Đăng Ký Tầng</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="panel panel-primary">
-            <div class="panel-heading text-center">
-              <h1>Thông Tin Tầng</h1>
+      <div class="panel">
+        <div class="panel-header">
+          <h1>Thông Tin Tầng</h1>
+        </div>
+        <div class="panel-body">
+          <form action="floor.php" method="post">
+            <div class="form-group">
+              <label for="Floor_Number">Số Tầng</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Floor_Number"
+                name="Floor_Number"
+                required
+                placeholder="Nhập số tầng"
+              />
             </div>
-            <div class="panel-body">
-              <form action="floor.php" method="post">
-                <div class="form-group">
-                  <label for="Floor_Number">Số Tầng</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Floor_Number"
-                    name="Floor_Number"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="Block">Khối</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Block"
-                    name="Block"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="Num_of_Kitchen">Số Nhà Bếp</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="Num_of_Kitchen"
-                    name="Num_of_Kitchen"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="Num_of_Room">Số Phòng</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="Num_of_Room"
-                    name="Num_of_Room"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="Num_of_Washroom">Số Phòng Tắm</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="Num_of_Washroom"
-                    name="Num_of_Washroom"
-                    required
-                  />
-                </div>
-                <button type="submit" class="btn btn-primary">GỬI</button>
-              </form>
+            <div class="form-group">
+              <label for="Block">Khối</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Block"
+                name="Block"
+                required
+                placeholder="Nhập khối"
+              />
             </div>
-            <div class="panel-footer text-right">
-              <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+            <div class="form-group">
+              <label for="Num_of_Kitchen">Số Nhà Bếp</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Num_of_Kitchen"
+                name="Num_of_Kitchen"
+                required
+                placeholder="Nhập số nhà bếp"
+              />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="Num_of_Room">Số Phòng</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Num_of_Room"
+                name="Num_of_Room"
+                required
+                placeholder="Nhập số phòng"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Num_of_Washroom">Số Phòng Tắm</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Num_of_Washroom"
+                name="Num_of_Washroom"
+                required
+                placeholder="Nhập số phòng tắm"
+              />
+            </div>
+            <input type="submit" value="GỬI" />
+          </form>
+        </div>
+        <div class="panel-footer">
+          <button><a href="DispHall.php">Quay lại</a></button>
+          <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
         </div>
       </div>
     </div>

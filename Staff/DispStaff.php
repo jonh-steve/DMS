@@ -15,56 +15,56 @@
       margin: 0;
       padding: 0;
     }
-
-   
   </style>
 </head>
 
 <body>
+  <div class="table-container">
+    <h2>Staff Record</h2>
 
-  <h2>Staff Record</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>ID Nhân Viên</th>
-        <th>Họ và Tên</th>
-        <th>Địa Chỉ</th>
-        <th>Email</th>
-        <th>Chức Vụ</th>
-        <th>Thao Tác</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
-      include 'connection.php';
-      $sql = "SELECT * FROM Staff";
-      $query = mysqli_query($conn, $sql);
-      while ($row1 = mysqli_fetch_array($query)) {
-      ?>
+    <table>
+      <thead>
         <tr>
-          <td><?php echo $row1['S_ID']; ?></td>
-          <td><?php echo $row1['Name']; ?></td>
-          <td><?php echo $row1['Address']; ?></td>
-          <td><?php echo $row1['Email']; ?></td>
-          <td><?php echo $row1['Designation']; ?></td>
-          <td class="operation-btns">
-            <a id="delete" href="Delete.php?S_ID=<?php echo $row1['S_ID']; ?>">Xóa</a>
-            <a id="update" href="update.php?S_ID=<?php echo $row1['S_ID']; ?>">Cập Nhật</a>
-          </td>
+          <th>ID Nhân Viên</th>
+          <th>Họ và Tên</th>
+          <th>Địa Chỉ</th>
+          <th>Email</th>
+          <th>Chức Vụ</th>
+          <th>Thao Tác</th>
         </tr>
-      <?php
-      }
-      ?>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <?php
+        include 'connection.php'; // Kết nối cơ sở dữ liệu
+        $sql = "SELECT * FROM Staff"; // Truy vấn dữ liệu
+        $query = mysqli_query($conn, $sql);
+
+        // Hiển thị dữ liệu từ cơ sở dữ liệu
+        while ($row1 = mysqli_fetch_array($query)) {
+        ?>
+          <tr>
+            <td><?php echo $row1['S_ID']; ?></td>
+            <td><?php echo $row1['Name']; ?></td>
+            <td><?php echo $row1['Address']; ?></td>
+            <td><?php echo $row1['Email']; ?></td>
+            <td><?php echo $row1['Designation']; ?></td>
+            <td class="operation-btns">
+              <a href="Delete.php?S_ID=<?php echo $row1['S_ID']; ?>" id ="delete">Xóa</a>
+              <a href="update.php?S_ID=<?php echo $row1['S_ID']; ?>" id ="update">Cập Nhật</a>
+            </td>
+          </tr>
+        <?php
+        }
+        ?>
+      </tbody>
+    </table>
+  </div>
 
   <div class="center-container">
     <a href="staff.html" class="button">Thêm Mới</a>
     <a href="index.html" class="button">Tìm Kiếm</a>
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
-
 </body>
 
 </html>
