@@ -1,0 +1,23 @@
+/*l*/
+header .box-left a {
+    display: flex;
+}
+
+header .box-left img {
+
+    width: 25%;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+
+}

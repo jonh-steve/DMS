@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="https://juniv.edu/images/favicon.ico">
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link href="../img/favicon.ico" rel="icon">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">-->
+<!--    <link href="../img/favicon.ico" rel="icon">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="home.css" />
 
 
@@ -84,22 +85,56 @@
             display: block;
             margin: 10px;
         }
+        @media screen and (max-width: 600px) {
+            /* For mobile phones: */
+           .menu-bar ul li {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 10px;
+
+           }
+            .menu-bar ul li:hover.sub-menu-1 {
+                display: none;
+            }
+            .menu-bar ul li:hover.sub-menu-1 ul {
+                display: none;
+            }
+            .menu-bar ul li:hover.sub-menu-1 ul li {
+                display: block;
+                padding: 5px;
+            }
+            .menu-bar ul li:hover.sub-menu-1 ul li:hover {
+                background: #2bab0d;
+                border-radius: 5px;
+            }
+
+        }
+
     </style>
 </head>
 
 <body>
 
-    <header class="header">
-        <img src="images/ju_logo.png" alt style="height: 70px; width: 65px">
-        <a href="#" class="logo" style="text-decoration: none;">DORMITORY MANAGEMENT SYSTEM</a>
+    <header class="header" id="header">
+        <div class="box-left">
+            <a href="#header" style="" >
+                <img src="images/logomeo.png" alt style="height: 70px; width: 65px">
+                <h1 class="intro_text heading"  style="font-size: 25px" ">
+                    PHẦN MỀM QUẢN LÝ KÝ TÚC XÁ
+                </h1>
+            </a>
+        </div>
         <nav class="navbar">
-            <a href="#about" style=" text-decoration:none; ">About</a>
-            <a href="#provost" style=" text-decoration:none; ">Notice</a>
-            <a href="#hall" style=" text-decoration:none; ">Hall</a>
-            <a href="#Gallery" style=" text-decoration:none; ">Gallery</a>
-            <a href="#dining" style=" text-decoration:none; ">Dining</a>
-            <a href="#contact" style=" text-decoration:none; ">contact</a>
-            <button id="admin" style="    margin-left: 7px;height: 40px;width: 80px"><a href="login.php" style=" text-decoration:none; text-align:center" id="link1">Login</a></button>
+            <a href="#about" style=" ">Giới thiệu</a>
+            <a href="#provost" style=" ">Thông báo </a>
+            <a href="#hall" style=" ">Ký túc xá </a>
+            <a href="#Gallery" style=" ">Cảnh quan </a>
+<!--            <a href="#dining" style=" "></a>-->
+            <a href="#contact" style=" ">Kết nối </a>
+            <div id="login">
+                <button id="admin" style="    margin-left: 7px;height: 40px;width: 80px"><a href="login.php" style=" text-align:center" id="link1">Login</a></button>
+            </div>
         </nav>
 
         </nav>
@@ -149,10 +184,6 @@
                 </div> <!----modal content close--->
             </div> <!----modal dialog close--->
         </div> <!----modal close--->
-
-
-
-
         </nav>
     </header>
     <!-- header end -->
