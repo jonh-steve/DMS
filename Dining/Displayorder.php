@@ -50,6 +50,8 @@
   <div class="center-buttons">
     <a href="../index.php" class="button">Trang chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>

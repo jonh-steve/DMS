@@ -59,6 +59,7 @@ body {
 
 /* Nút hành động */
 .button {
+  background-color: #4CAF50;
   padding: 8px 16px;
   border: none;
   border-radius: 5px;
@@ -67,6 +68,8 @@ body {
   text-decoration: none;
   color: white;
   transition: background-color 0.3s ease;
+  text-align: center;
+
 }
 
 .button:hover {
@@ -100,6 +103,7 @@ body {
 /* Container căn giữa các nút */
 .center-buttons {
   display: flex;
+  position: fixed;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
@@ -124,3 +128,69 @@ body {
     gap: 10px;
   }
 }
+/*text_content title*/
+ .text_content{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 40px;
+   font-family: 'Times New Roman', Times, serif;
+   font-style: italic;
+   font-weight: bold;
+
+}
+ /*center-container*/
+.center-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  height: 100%;
+  background-color: #f1f1f1;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*opptoin actions*/
+.actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.actions:hover{
+  color: #4CAF50;
+}
+/*action button*/
+/*.action-button{*/
+/*  background-color: #4CAF50;*/
+/*  padding: 10px 20px;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  text-align: center;*/
+/*  color: white;*/
+/*  transition: background-color 0.3s ease;*/
+/*}*/
+.actions a {
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+#delete {
+  background-color: #f32121;
+}
+#update {
+  background-color: #008CBA;
+}
+
+
+

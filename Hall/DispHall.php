@@ -148,10 +148,11 @@
     </table>
   </div>
 
-  <div class="center-buttons">
+  <div class="center-container">
     <a href="Hall.html" class="button">Thêm</a>
     <a href="../dashboard/home.php" class="button">Trang chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
 
 </body>
 

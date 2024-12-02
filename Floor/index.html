@@ -4,13 +4,17 @@
   <title>Search Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/for_search.css">
 </head>
-<body style="background-color: rgb(22, 51, 51);">
-<div class="container" style="margin-left:500px;margin-right:100px; margin-top: 150px">
-  <form class="form-inline" method="post" action="search.php">
-    <input type="text" name="Floor_Number" style="text-align:center; margin-top:80px;" class="form-control" placeholder="Search floor Number...">
-    <button type="submit"style="text-align:center; margin-top:80px;" name="save" class="btn btn-primary">Search</button>
+
+<body>
+<div class="container">
+  <form class="container" method="post" action="search.php">
+    <input type="number" name="Floor_Number"  placeholder="Tìm kiếm thông qua số tầng...">
+    <button type="submit" name="save" class="btn btn-primary">Tìm kiếm </button>
+    <a href="DispFloor.php.php" class="button">Quay lại</a>
   </form>
 </div>
 </body>

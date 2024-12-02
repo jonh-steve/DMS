@@ -1,77 +1,63 @@
 <?php
 include 'connection.php';
 
-$Modified_Date=$_POST['Modified_Date'];
-$result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Light_Un) as total_uv, sum(Damaged_Fan_Pro+Damaged_Light_Pro) as total_pro,sum(Damaged_Fan_Sol+Damaged_Light_Sol) as total_sol,Modified_Date FROM facility_problem where Modified_Date='$Modified_Date' ");
+// Lấy ngày sửa đổi từ POST
+$Modified_Date = isset($_POST['Modified_Date']) ? mysqli_real_escape_string($conn, $_POST['Modified_Date']) : '';
+
+// Thực hiện truy vấn
+$result = mysqli_query($conn, "SELECT Room_Number, 
+    SUM(Damaged_Fan_Un + Damaged_Light_Un) AS total_uv, 
+    SUM(Damaged_Fan_Pro + Damaged_Light_Pro) AS total_pro, 
+    SUM(Damaged_Fan_Sol + Damaged_Light_Sol) AS total_sol, 
+    Modified_Date 
+    FROM facility_problem 
+    WHERE Modified_Date='$Modified_Date' 
+    GROUP BY Room_Number");
 
 ?>
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title> Retrive data</title>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-
-    .center {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .button {
-      background-color: #4CAF50;
-      /* Green */
-      border: none;
-      color: white;
-      padding: 10px 25px;
-      text-align: center;
-      margin-top: 60px;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    
-    }
-    #sea{
-      margin-top: 70px;
-      margin-left: 400px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Data</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
-<body style="background-color:skyblue;">
-  <table id="sea" class="center table table-striped">
-    <tr>
-      <td>Room Number</td>
-      <td> Total Unsolved</td>
-      <td> Total Processing</td>
-      <td> Total Solved</td>
-      <td> Last Modified Date</td>
-    </tr>
-    <?php
-    // $Modified_Date = $_POST['Modified_Date'];
-    while ($row1 = mysqli_fetch_array($result)) {
-    ?>
-      <tr>
-        <td><?php echo $row1["Room_Number"]; ?></td>
-        <td><?php echo $row1["total_uv"]; ?></td>
-        <td><?php echo $row1["total_pro"]; ?></td>
-        <td><?php echo $row1["total_sol"]; ?></td>
-        <td><?php echo $row1["Modified_Date"]; ?></td>
-       
-      </tr>
-    <?php
-    }
-    ?>
-  </table>
-  <center>
-    <button class="button"> <a href="DispFP.php" style="text-decoration: none;">Back</a> </button>
-  </center>
-
+<body>
+<div class="table-container">
+    <h2 class="text_content">Thông tin vấn đề cơ sở vật chất</h2>
+    <table class="center table table-striped">
+        <thead>
+        <tr>
+            <th>Số Phòng</th>
+            <th>Tổng chưa giải quyết</th>
+            <th>Tổng đang xử lý</th>
+            <th>Tổng đã giải quyết</th>
+            <th>Ngày sửa đổi cuối</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        // Kiểm tra và hiển thị kết quả
+        if (mysqli_num_rows($result) > 0) {
+            while ($row1 = mysqli_fetch_assoc($result)) {
+                echo "<tr>
+                        <td>{$row1['Room_Number']}</td>
+                        <td>{$row1['total_uv']}</td>
+                        <td>{$row1['total_pro']}</td>
+                        <td>{$row1['total_sol']}</td>
+                        <td>{$row1['Modified_Date']}</td>
+                      </tr>";
+            }
+        } else {
+            echo "<tr><td colspan='5'>Không có kết quả nào phù hợp yêu cầu.</td></tr>"; // Thông báo nếu không có kết quả
+        }
+        ?>
+        </tbody>
+    </table>
+    <div class="center-buttons">
+        <a href="DispFP.php" class="button">Quay lại</a>
+    </div>
+</div>
 </body>
-
 </html>

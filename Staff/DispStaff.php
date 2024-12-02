@@ -7,20 +7,19 @@
   <title>Staff Record</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    body {
-      background-image: url("../images/g1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+      body {
+          margin: 0;
+          padding: 20px;
+          font-family: Arial, sans-serif;
+      }
+
   </style>
 </head>
 
 <body>
   <div class="table-container">
-    <h2>Staff Record</h2>
+
+    <h2 class="text_content">Hồ sơ nhân viên </h2>
 
     <table>
       <thead>
@@ -48,7 +47,7 @@
             <td><?php echo $row1['Address']; ?></td>
             <td><?php echo $row1['Email']; ?></td>
             <td><?php echo $row1['Designation']; ?></td>
-            <td class="operation-btns">
+            <td class="actions">
               <a href="Delete.php?S_ID=<?php echo $row1['S_ID']; ?>" id ="delete">Xóa</a>
               <a href="update.php?S_ID=<?php echo $row1['S_ID']; ?>" id ="update">Cập Nhật</a>
             </td>
@@ -65,6 +64,8 @@
     <a href="index.html" class="button">Tìm Kiếm</a>
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>

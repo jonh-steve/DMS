@@ -4,13 +4,17 @@
   <title>Search Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/for_search.css">
 </head>
+
 <body>
 <div class="container">
-  <form class="form-inline" method="post" action="search.php">
-    <input type="number" name="Stu_id" style="height: 50px; width: 20%; align-items: center;" class="form-control" placeholder="Search Student id...">
-    <button type="submit" name="save" class="btn btn-primary">Search</button>
+  <form class="container" method="post" action="search.php">
+    <input type="number" name="Stu_id"  placeholder="Tìm kiếm thông qua id sinh viên...">
+    <button type="submit" name="save" class="btn btn-primary">Tìm kiếm </button>
+    <a href="DispStudent.php" class="button">Quay lại</a>
   </form>
 </div>
 </body>

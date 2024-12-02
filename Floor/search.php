@@ -1,78 +1,55 @@
 <?php
-// error_reporting(0);
-// $conn = mysqli_connect("localhost","root","","student");
 include 'connection.php';
-// if(count($_POST)>0) {
-$Floor_Number = $_POST['Floor_Number'];
-$result = mysqli_query($conn,"SELECT * FROM Floor where Floor_Number='$Floor_Number' ");
-//}
+
+// Lấy số tầng từ POST
+$Floor_Number = isset($_POST['Floor_Number']) ? mysqli_real_escape_string($conn, $_POST['Floor_Number']) : '';
+
+// Thực hiện truy vấn
+$result = mysqli_query($conn, "SELECT * FROM Floor WHERE Floor_Number='$Floor_Number'");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Retrive data</title>
-<style>
-  body{
-    background-image: url(../images/slider3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
-  }
-table, th, td {
-    border: 1px solid black;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  margin-top: 60px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-#tdr{
-     width: 50%;
-     margin-top: 70px;
-     align-items: center;
-}
-
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Data</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<table id="tdr" class="center table table-striped" >
-<tr>
-<td>Floor Number</td>
-<td>Block</td>
-<td>Number of Kitchen</td>
-<td> Number of Room</td>
-<td> Number of Washroom</td>
-</tr>
-<?php
-while($row1 = mysqli_fetch_array($result)) {
-?>
-<tr>
-<td><?php echo $row1["Floor_Number"]; ?></td>
-<td><?php echo $row1["Block"]; ?></td>
-<td><?php echo $row1["Num_of_Kitchen"]; ?></td>
-<td><?php echo $row1["Num_of_Room"]; ?></td>
-<td><?php echo $row1["Num_of_Washroom"]; ?></td>
-</tr>
-<?php
-}
-?>
-</table>
-<center>
-<button class="button" > <a href="DispFloor.php" style="text-decoration: none;">Back</a> </button>
-</center>
-
+<div class="table-container">
+    <h2 class="text_content">Thông tin tầng</h2>
+    <table class="center table table-striped">
+        <thead>
+        <tr>
+            <th>Số Tầng</th>
+            <th>Block</th>
+            <th>Số Bếp</th>
+            <th>Số Phòng</th>
+            <th>Số Nhà vệ sinh</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        // Kiểm tra và hiển thị kết quả
+        if (mysqli_num_rows($result) > 0) {
+            while ($row1 = mysqli_fetch_assoc($result)) {
+                echo "<tr>
+                        <td>{$row1['Floor_Number']}</td>
+                        <td>{$row1['Block']}</td>
+                        <td>{$row1['Num_of_Kitchen']}</td>
+                        <td>{$row1['Num_of_Room']}</td>
+                        <td>{$row1['Num_of_Washroom']}</td>
+                      </tr>";
+            }
+        } else {
+            echo "<tr><td colspan='5'>Không có kết quả nào phù hợp yêu cầu.</td></tr>"; // Thông báo nếu không có kết quả
+        }
+        ?>
+        </tbody>
+    </table>
+    <div class="center-buttons">
+        <a href="DispFloor.php" class="button">Quay lại</a>
+    </div>
+</div>
 </body>
 </html>

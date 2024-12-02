@@ -7,105 +7,18 @@
   <title>Hồ Sơ Sinh Viên</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    /* Định dạng cơ bản */
-    body {
-      background-color: lightblue;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .table-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    th,
-    td {
-      padding: 10px;
-      text-align: center;
-      border: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-
-    .actions a {
-      padding: 8px 12px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-      color: white;
-    }
-
-    .actions a#delete {
-      background-color: #f44336;
-    }
-
-    .actions a#delete:hover {
-      background-color: #d32f2f;
-    }
-
-    .actions a#update {
-      background-color: #2196F3;
-    }
-
-    .actions a#update:hover {
-      background-color: #1976D2;
-    }
-
-    .center-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .center-buttons a {
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .center-buttons a:hover {
-      background-color: #45a049;
-    }
+      body {
+          margin: 0;
+          padding: 20px;
+          font-family: Arial, sans-serif;
+      }
   </style>
 </head>
 
 <body>
 
   <div class="table-container">
-    <h2>Hồ Sơ Sinh Viên</h2>
+    <h2 class="text_content">Hồ Sơ Sinh Viên</h2>
 
     <table>
       <thead>
@@ -151,12 +64,15 @@
     </table>
   </div>
 
-  <div class="center-buttons">
-    <a href="student.html">Thêm Mới</a>
-    <a href="index.html">Tìm Kiếm</a>
-    <a href="../dashboard/home.php">Trang Chủ</a>
+  <div class="center-container">
+    <a href="student.html" class="button">Thêm Mới</a>
+    <a href="index.html" class="button">Tìm Kiếm</a>
+    <a href="../dashboard/home.php" class="button">Trang Chủ</a>
+
   </div>
+  <script src="../js/delete.js"></script>
 
 </body>
+
 
 </html>

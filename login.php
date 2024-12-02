@@ -96,7 +96,7 @@
 
         <div class="student-signup">
             <h2>Are you a student?</h2>
-            <a href="../DMS/Student/signup.html" class="btn">Student Sign-up</a>
+            <a href="Student/signup.html" class="btn">Student Sign-up</a>
         </div>
     </div>
 

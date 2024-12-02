@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     body {
-      background-image: url(../images/sea2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
       margin: 0;
       padding: 20px;
       font-family: Arial, sans-serif;
@@ -20,7 +17,7 @@
 
 <body>
   <div class="table-container">
-    <h2>Danh Sách Các Tầng</h2>
+    <h2 class="text_content">Danh Sách Các Tầng</h2>
 
     <table>
       <thead>
@@ -48,7 +45,7 @@
             <td><?php echo $row1['Num_of_Kitchen']; ?></td>
             <td><?php echo $row1['Num_of_Room']; ?></td>
             <td><?php echo $row1['Num_of_Washroom']; ?></td>
-            <td class="action-button">
+            <td class="actions">
               <a href="Delete.php?Floor_Number=<?php echo $row1['Floor_Number']; ?>" id="delete">Xóa</a>
               <a href="Update.php?Floor_Number=<?php echo $row1['Floor_Number']; ?>" id="update">Cập Nhật</a>
             </td>
@@ -58,11 +55,13 @@
     </table>
   </div>
 
-  <div class="center-buttons">
+  <div class="center-container">
     <a href="Floor.html" class="button">Thêm Mới</a>
     <a href="index.html" class="button">Tìm Kiếm</a>
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>

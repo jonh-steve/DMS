@@ -33,7 +33,7 @@
             <td><?php echo $row1['Num_of_Table']; ?></td>
             <td><?php echo $row1['Num_of_Bed']; ?></td>
             <td><?php echo $row1['Floor_Number']; ?></td>
-            <td>
+            <td class="actions">
               <a id= "delete" href="Delete.php?Room_Number=<?php echo $row1['Room_Number']; ?>" >Xóa</a>
               <a id= "update" href="Update.php?Room_Number=<?php echo $row1['Room_Number']; ?>" >Cập nhật</a>
             </td>
@@ -45,11 +45,13 @@
     </table>
   </div>
 
-  <div class="center-buttons">
-    <a href="Room.html" class="button add">Thêm phòng mới</a>
+  <div class="center-container">
+    <a href="Room.html" class="button">Thêm phòng mới</a>
     <a href="index.html" class="button">Tìm kiếm</a>
     <a href="../dashboard/home.php" class="button">Trang chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>

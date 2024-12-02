@@ -112,7 +112,7 @@
           <td><?php echo $row1['Email']; ?></td>
           <td><?php echo $row1['Designation']; ?></td>
           <td>
-            <a href="Delete.php?P_ID=<?php echo $row1['P_ID']; ?>" class="delete-btn">Delete</a>
+            <a href="Delete.php?P_ID=<?php echo $row1['P_ID']; ?>" class="delete">Delete</a>
           </td>
         </tr>
       <?php

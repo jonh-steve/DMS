@@ -43,6 +43,8 @@
       <a href="../dashboard/home.php" class="button">Trang chủ</a>
     </div>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>

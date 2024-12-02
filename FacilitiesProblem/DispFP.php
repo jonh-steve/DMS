@@ -7,14 +7,7 @@
   <title>Danh Sách Vấn Đề Cơ Sở Vật Chất</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    /* Thiết lập chung */
-    body {
-      background-color: lightskyblue;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
+
 
    
   </style>
@@ -23,12 +16,8 @@
 <body>
   <!-- Container cho bảng -->
   <div class="table-container">
+      <h2 class="text_content">Danh Sách Vấn Đề Cơ Sở Vật Chất</h2>
     <table>
-      <tr>
-        <th colspan="9">
-          <h2>Danh Sách Vấn Đề Cơ Sở Vật Chất</h2>
-        </th>
-      </tr>
       <tr>
         <th>Số Phòng</th>
         <th>Quạt Hỏng (Chưa Xử Lý)</th>
@@ -55,9 +44,9 @@
           <td><?php echo $row1['Damaged_Light_Pro']; ?></td>
           <td><?php echo $row1['Damaged_Light_Sol']; ?></td>
           <td><?php echo $row1['Modified_Date']; ?></td>
-          <td class="action-button">
-            <a id="delete" class="button" href="Delete.php?Room_Number=<?php echo $row1['Room_Number']; ?>">Xóa</a>
-            <a id="update" class="button" href="Update.php?Room_Number=<?php echo $row1['Room_Number']; ?>">Cập Nhật</a>
+          <td class="actions">
+            <a id="delete"  href="Delete.php?Room_Number=<?php echo $row1['Room_Number']; ?>">Xóa</a>
+            <a id="update"  href="Update.php?Room_Number=<?php echo $row1['Room_Number']; ?>">Cập Nhật</a>
           </td>
         </tr>
       <?php
@@ -67,12 +56,14 @@
   </div>
 
   <!-- Các nút hành động -->
-  <div class="center-buttons">
+  <div class="center-container">
     <a href="FP.html" class="button">Thêm Mới</a>
     <a href="index.html" class="button">Tìm Theo Ngày</a>
     <a href="search_update.html" class="button">Tìm Theo Phòng</a>
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
+  <script src="../js/delete.js"></script>
+
 </body>
 
 </html>
