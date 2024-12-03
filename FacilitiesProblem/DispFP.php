@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Danh Sách Vấn Đề Cơ Sở Vật Chất</title>
   <link rel="stylesheet" href="../css/style.css">
-  <style>
+    <link rel="shortcut icon" href="images/logomeo.png">
+
+    <style>
 
 
    
@@ -58,7 +60,7 @@
   <!-- Các nút hành động -->
   <div class="center-container">
     <a href="FP.html" class="button">Thêm Mới</a>
-    <a href="index.html" class="button">Tìm Theo Ngày</a>
+<!--    <a href="index.html" class="button">Tìm Theo Ngày</a>-->
     <a href="search_update.html" class="button">Tìm Theo Phòng</a>
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
   </div>

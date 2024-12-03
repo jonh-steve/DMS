@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ Thống Quản Lý KTX Sinh Viên</title>
-    <link rel="shortcut icon" href="https://juniv.edu/images/favicon.ico">
+    <link rel="shortcut icon" href="../images/logomeo.png">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,10 +30,10 @@
     </header>
 
     <ul>
-        <li>
-            <a href="../Provost/DispProvost.php" style="text-decoration:none"><i class="fas fa-user-tie"></i> Hiệu
-                Trưởng </a>
-        </li>
+<!--        <li>-->
+<!--            <a href="../Provost/DispProvost.php" style="text-decoration:none"><i class="fas fa-user-tie"></i> Hiệu-->
+<!--                Trưởng </a>-->
+<!--        </li>-->
         <li>
             <a href="../Hall/DispHall.php" style="text-decoration:none"><i class="fas fa-building"></i> Ký Túc Xá </a>
         </li>

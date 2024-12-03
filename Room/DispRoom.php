@@ -10,7 +10,7 @@
 
 <body>
   <div class="table-container">
-    <h2>Dữ liệu phòng</h2>
+    <h2 class="text_content">Dữ liệu phòng</h2>
     <table>
       <thead>
         <tr>

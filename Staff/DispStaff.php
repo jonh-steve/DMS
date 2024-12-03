@@ -62,7 +62,7 @@
   <div class="center-container">
     <a href="staff.html" class="button">Thêm Mới</a>
     <a href="index.html" class="button">Tìm Kiếm</a>
-    <a href="../dashboard/home.php" class="button">Trang Chủ</a>
+    <a href="../../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
   <script src="../js/delete.js"></script>
 
