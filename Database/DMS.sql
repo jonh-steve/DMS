@@ -113,22 +113,10 @@ CREATE TABLE `hall` (
 --
 
 INSERT INTO `hall` (`H_ID`, `H_Name`, `T_Seat`, `A_Seat`, `N_Student`) VALUES
-(1, 'Mir Mosharraf Hossain Hall', 800, 50, 750),
-(2, 'Shaheed Salam-Barkat Hall', 400, 0, 400),
-(3, 'Bangabandhu Sheikh Mujibur Rahman Hall', 500, 10, 490),
-(4, 'Al Beruni Hall', 400, 50, 350),
-(5, 'Shaheed Rafiq-Jabbar Hall', 500, 0, 500),
-(6, 'A F M Kamaluddin Hall', 400, 100, 300),
-(7, 'Mowlana Bhashani Hall', 600, 200, 400),
-(8, 'Bishwakabi Rabindranath Tagore Hall', 400, 0, 400),
-(9, 'Jahanara Imam Hall', 200, 50, 150),
-(10, 'Nawab Faizunnesa Hall', 100, 20, 80),
-(11, 'Pritilata Hall', 300, 60, 240),
-(12, 'Fazilatunnesa Hall', 150, 50, 100),
-(13, 'Begum Khaleda Zia Hall', 400, 100, 300),
-(14, 'Sheikh Hasina Hall', 500, 100, 400),
-(15, 'Bangamata Begum Fazilatunnessa Mujib Hall', 600, 100, 500),
-(16, 'Begum Sufia Kamal Hall', 400, 20, 380);
+(1, 'Ky Tuc Xa khu I', 800, 50, 750),
+(2, 'Ky Tuc Xa khu II', 400, 0, 400),
+(3, 'Ky Tuc Xa khu III', 500, 10, 490),
+
 
 -- --------------------------------------------------------
 
@@ -172,30 +160,6 @@ INSERT INTO `message_table` (`Stu_ID`, `Name`, `Room_Num`, `Messages`) VALUES
 (2090, 'Amit Azim', '125/A', 'Door problem');
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `orders`
---
-
-CREATE TABLE `orders` (
-  `order_id` int(11) NOT NULL,
-  `name` varchar(250) NOT NULL,
-  `id` int(11) NOT NULL,
-  `type` varchar(250) NOT NULL,
-  `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`order_id`, `name`, `id`, `type`, `quantity`) VALUES
-(1, 'Md. Shakil Hossain ', 2023, 'breakfast', 1),
-(5, 'Zamshed Ikbal', 1997, 'dinner', 2),
-(6, 'Mahbubur Rahman', 2024, 'launch', 1);
-
--- --------------------------------------------------------
-
 --
 -- Table structure for table `provost`
 --
