@@ -32,7 +32,7 @@ $row= mysqli_fetch_array($result);
 <section class="sec">
 Student ID: <br>
 <input style="width: 50%; height:30px; " type="hidden" name="Stu_ID" class="txtField" value="<?php echo $row['Stu_ID']; ?>">
-<input style="width: 50%; height:30x; " type="text" name="Name"  value="<?php echo $row['Stu_ID']; ?>">
+<input style="width: 50%; height:30px; " type="text" name="Name"  value="<?php echo $row['Stu_ID']; ?>">
 <br>
 Name: <br>
 <input style="width: 50%; height:30px; " type="text" name="Name" class="txtField" value="<?php echo $row['Name']; ?>">

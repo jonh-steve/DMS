@@ -37,7 +37,7 @@
 	$Messages = $_POST['Messages'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','final_dbms');
+	$conn = new mysqli('localhost','root','','dms');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
@@ -53,7 +53,7 @@
 ?>
 <center>
   <div class="record"><h1>Your Problem has been recorded.....</h1></div>
- <button class="button" id="update"> <a href="../home.php" style="text-decoration: none;">Home Page</a> </button> 
+ <button class="button" id="update"> <a href="../index.php" style="text-decoration: none;">Home Page</a> </button>
               </center>
 </body>
 </html>

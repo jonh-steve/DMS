@@ -15,7 +15,7 @@
 		//$stmt->bind_param("isssis", $Stu_id, $Name, $Department, $Session, $Hall, $Room_Number, $Floor_Number);
 		$execval = $stmt->execute();
 		echo $execval;
-		include "../index.php";
+		include "index.php";
 		$stmt->close();
 		$conn->close();
 	}

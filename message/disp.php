@@ -18,6 +18,7 @@
           <th>Họ và tên</th>
           <th>Số phòng</th>
           <th>Tin nhắn</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -32,6 +33,10 @@
             <td><?php echo $row1['Name']; ?></td>
             <td><?php echo $row1['Room_Num']; ?></td>
             <td><?php echo $row1['Messages']; ?></td>
+
+              <td class="actions">
+                  <a id="delete" href="Delete.php?Stu_ID=<?php echo $row1['Stu_ID']; ?>"  <?php echo $row1['Name']; ?>">Xóa</a>
+              </td>
           </tr>
         <?php
         }
