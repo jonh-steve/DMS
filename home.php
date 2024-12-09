@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logomeo.png">
     <title>Phần mềm quản lý ký túc xá</title>
     <!--    <link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="home_one.css">
@@ -14,18 +15,18 @@
 <header class="site-header">
     <div class="wrapper site-header__wrapper">
         <div class="intro_text">
-                <img src="images/logomeo.png" alt="Logo" class="logo">
-                <h1 class="intro_text" style="font-size: 25px">
-                    PHAN MEM QUAN LY KY TUC XA
-                </h1>
+            <img src="images/logomeo.png" alt="Logo" class="logo">
+            <h1 class="intro_text" style="font-size: 25px">
+                PHAN MEM QUAN LY KY TUC XA
+            </h1>
         </div>
         <div class="site-header__middle site-header">
             <nav class="nav">
-<!--                <div class="nav__toggle">-->
-<!--                    <button class="menu" aria-expanded="false" type="button">-->
-<!--                        menu-->
-<!--                    </button>-->
-<!--                </div>-->
+                <!--                <div class="nav__toggle">-->
+                <!--                    <button class="menu" aria-expanded="false" type="button">-->
+                <!--                        menu-->
+                <!--                    </button>-->
+                <!--                </div>-->
                 <ul class="nav__wrapper">
                     <li class="nav__item"><a href="#">Trang chủ</a></li>
                     <li class="nav__item"><a href="#noi">Giới thiệu</a></li>
@@ -58,8 +59,8 @@
 
 </div>
 
-<!-- about section end -->
 
+<!-- about section end -->
 
 <!-- provost  start -->
 <div class="box-contact">
@@ -208,7 +209,7 @@
                             <div class="address">
                                 <i class="bx bx-home"></i>
                                 <h4>Địa chỉ:</h4>
-                                <p>Kí túc xá Sổa Barkat, Đại học Jahangirnagar, Savar</p>
+                                <p>41A Đ. Phú Diễn, Phú Diễn, Bắc Từ Liêm, Hà Nội</p>
                             </div>
                             <div class="mail">
                                 <i class="bx bx-envelope"></i>
@@ -247,11 +248,11 @@
                                           data-rule="required"
                                           data-msg="Vui lòng viết điều gì đó cho chúng tôi"></textarea>
                             </div>
-<!--                            <div class="mb-3">-->
-<!--                                <div class="loading">Đang tải...</div>-->
-<!--                                <div class="error-message"></div>-->
-<!--                                <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn!</div>-->
-<!--                            </div>-->
+                            <!--                            <div class="mb-3">-->
+                            <!--                                <div class="loading">Đang tải...</div>-->
+                            <!--                                <div class="error-message"></div>-->
+                            <!--                                <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn!</div>-->
+                            <!--                            </div>-->
                             <div class="text-center" id="button_mes">
                                 <button type="submit">Gửi tin nhắn</button>
                             </div>
@@ -262,7 +263,7 @@
         </div>
     </section>
     <!-- Contact End -->
-<!--footer-->
+    <!--footer-->
     <section class="py-10 bg-white sm:pt-16 lg:pt-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
