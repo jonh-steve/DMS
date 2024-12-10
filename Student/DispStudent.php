@@ -11,7 +11,16 @@
           margin: 0;
           padding: 20px;
           font-family: Arial, sans-serif;
+
       }
+    #box-search{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*border: 1px solid #5bc0de;*/
+        margin: 1rem auto;
+    }
   </style>
 </head>
 
@@ -19,6 +28,13 @@
 
   <div class="table-container">
     <h2 class="text_content">Hồ Sơ Sinh Viên</h2>
+<!--    search-->
+      <div id="box-search" >
+            <form class="search" action="search.php" method="post">
+                <input type="number" name="Stu_id"  placeholder="Tìm kiếm thông qua id sinh viên...">
+                <button type="submit" name="save" class="button">Tìm kiếm </button>
+            </form>
+      </div>
 
     <table>
       <thead>
@@ -66,7 +82,7 @@
 
   <div class="center-container">
     <a href="student.html" class="button">Thêm Mới</a>
-    <a href="index.html" class="button">Tìm Kiếm</a>
+<!--    <a href="index.html" class="button">Tìm Kiếm</a>-->
     <a href="../dashboard/home.php" class="button">Trang Chủ</a>
 
   </div>

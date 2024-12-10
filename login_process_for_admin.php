@@ -1,35 +1,30 @@
-<?php session_start();
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-include('database_connection.php');
+include "database_connection.php";
 
-if(isset($_POST['login']))
-{
+    // Sử dụng prepared statement để tránh SQL injection
+    $stmt = $con->prepare("SELECT * FROM login WHERE username = ? AND password = ?");
+    $stmt->bind_param("ss", $username, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-$user_unsafe=$_POST['username'];
-$pass_unsafe=$_POST['password'];
+    // Kiểm tra kết quả
+    if ($result->num_rows > 0) {
+        // Đăng nhập thành công, chuyển hướng đến trang quản trị
+        header("Location: dashboard/home.php");
+        exit();
+    } else {
+        // Đăng nhập thất bại, hiển thị thông báo lỗi
+        echo "<script>alert('Tên đăng nhập hoặc mật khẩu không hợp lệ');</script>";
 
-$user = mysqli_real_escape_string($con,$user_unsafe);
-$pass = mysqli_real_escape_string($con,$pass_unsafe);
+        header("Location: ../");
+    }
 
-$query=mysqli_query($con,"select * from login where username='$user' and password='$pass'")or die(mysqli_error($con));
-	$row=mysqli_fetch_array($query);
-           
-           $name=$row['username'];
-           $counter=mysqli_num_rows($query);
-           $id=$row['id'];
-           
-	  	if ($counter == 0) 
-		  {	
-		  echo "<script type='text/javascript'>alert('Tên người dùng hoặc mật khẩu không hợp lệ!');
-		  document.location='login.php'</script>";
-		  } 
-	  else
-		  {
-
-		$_SESSION['id']=$id;	
-	  	$_SESSION['username']=$name;
-	
-	  		
-	    echo "<script type='text/javascript'>document.location='dashboard/home.php'</script>";
-	  }
+    // Đóng statement và kết nối
+    $stmt->close();
+    $conn->close();
 }
+?>

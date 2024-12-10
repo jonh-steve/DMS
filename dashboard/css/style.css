@@ -70,9 +70,12 @@ body {
 .cardspecific {
     position: relative;
     float: left;
-    font-size: 30px;
+    font-size: 1.5em ;
+    line-height: 1.5;
+    padding-top: 20px;
     width: 200px;
     height: 150px;
+    flex-wrap: wrap;
     margin: 20px;
     font-family: 'Mochiy Pop P One', sans-serif;
     font-weight: bolder;
@@ -92,25 +95,42 @@ body {
 
 .number {
     font-size: 25px;
-    padding-top: 40px;
+    /*padding-top: 40px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 10px;
     color: rgb(85, 12, 99);
 }
 
 /* logout button */
 .logout {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
     font-family: 'Mochiy Pop P One', sans-serif;
     font-weight: bolder;
 }
+.logout img {
+    margin-left: 1em;
+    max-width: 40px;
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
 
 .logout:hover {
-    transform: scale(1.2);
-    color: red;
+    transform: scale(-0.8);
     transition: 1s;
 }
 
 #hall {
-    font-size: 45px;
-    color: blue;
+    padding: 0 10px;
+    box-shadow: 0px 4px 8px rgba(29, 247, 255, 0.71);
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 35px;
+    color: black;
+
 }

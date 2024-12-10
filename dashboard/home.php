@@ -9,17 +9,18 @@
     <link rel="shortcut icon" href="../images/logomeo.png">
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"-->
+<!--          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="size-full bg-white">
 <!-- slidebar -->
 <div class="slidebar">
     <header>
@@ -36,10 +37,6 @@
 <!--        </li>-->
         <li>
             <a href="../Hall/DispHall.php" style="text-decoration:none"><i class="fas fa-building"></i> Ký Túc Xá </a>
-        </li>
-        <li>
-            <a href="../Dining/Displayorder.php" style="text-decoration:none"><i class="fas fa-utensils"></i> Nhà ăn
-            </a>
         </li>
         <li>
             <a href="../Student/DispStudent.php" style="text-decoration:none"><i class="fas fa-book-reader"></i> Sinh
@@ -66,13 +63,15 @@
     <!-- logout button -->
     <div>
         <div class="logout">
-            <a style="text-decoration: none;" href="../index.php">Log Out</a>
+            <a href="../index.php">
+                <img src="images/logout.png">
+            </a>
         </div>
     </div>
 </div>
 
 <!-- mainpart -->
-<div class="mainpart">
+<div class="mainpart ">
     <div class="infocard">
         <h1 id="hall">Hệ thống quản lý ký túc xá</h1>
 

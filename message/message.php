@@ -53,7 +53,7 @@
 ?>
 <center>
   <div class="record"><h1>Your Problem has been recorded.....</h1></div>
- <button class="button" id="update"> <a href="../index.php" style="text-decoration: none;">Home Page</a> </button>
+ <button class="button" id="update"> <a href="../home.php" style="text-decoration: none;">Home Page</a> </button>
               </center>
 </body>
 </html>

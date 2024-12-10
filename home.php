@@ -22,22 +22,16 @@
         </div>
         <div class="site-header__middle site-header">
             <nav class="nav">
-                <!--                <div class="nav__toggle">-->
-                <!--                    <button class="menu" aria-expanded="false" type="button">-->
-                <!--                        menu-->
-                <!--                    </button>-->
-                <!--                </div>-->
                 <ul class="nav__wrapper">
                     <li class="nav__item"><a href="#">Trang chủ</a></li>
                     <li class="nav__item"><a href="#noi">Giới thiệu</a></li>
-                    <li class="nav__item"><a href="#KTX">Điểm thú vị</a></li>
-                    <li class="nav__item"><a href="#mes">Gửi tin nhắn</a></li>
-                    <li class="nav__item"><a href="#">Kết nối</a></li>
+                    <li class="nav__item"><a href="#KTX">Cảnh quan ký túc</a></li>
+                    <li class="nav__item"><a href="#mes">Kết nối</a></li>
                 </ul>
             </nav>
         </div>
         <div class="site-header__end button">
-            <a href="login.php">ADMIN</a>
+            <a href="index.php">Đăng xuất </a>
         </div>
     </div>
 </header>
@@ -248,13 +242,18 @@
                                           data-rule="required"
                                           data-msg="Vui lòng viết điều gì đó cho chúng tôi"></textarea>
                             </div>
-                            <!--                            <div class="mb-3">-->
-                            <!--                                <div class="loading">Đang tải...</div>-->
-                            <!--                                <div class="error-message"></div>-->
-                            <!--                                <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn!</div>-->
-                            <!--                            </div>-->
                             <div class="text-center" id="button_mes">
-                                <button type="submit">Gửi tin nhắn</button>
+                                <button class="send_mes">
+                                    <div class="svg-wrapper-1">
+                                        <div class="svg-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <span>Send</span>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -263,113 +262,6 @@
         </div>
     </section>
     <!-- Contact End -->
-    <!--footer-->
-    <section class="py-10 bg-white sm:pt-16 lg:pt-24">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
-                <div class="col-span-2 md:col-span-4 xl:pr-8">
-
-                    <span class="intro_text">
-                        <img class="w-auto h-9 logo" src="images/logomeo.png" alt="" />
-                        PHAN MEM QUAN LY KY TUC
-                    </span>
-
-                </div>
-
-                <div class="lg:col-span-2">
-                    <p class="text-base font-semibold text-gray-900">Company</p>
-
-                    <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> About </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Features </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Works </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Career </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <p class="text-base font-semibold text-gray-900">Help</p>
-
-                    <ul class="mt-6 space-y-4">
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Customer Support </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Delivery Details </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Terms & Conditions </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Privacy Policy </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <p class="text-base font-semibold text-gray-900">Resources</p>
-
-                    <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Free eBooks </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Development Tutorial </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> How to - Blog </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> YouTube Playlist </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <p class="text-base font-semibold text-gray-900">Extra Links</p>
-
-                    <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Customer Support </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Delivery Details </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Terms & Conditions </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title="" class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"> Privacy Policy </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr class="mt-16 mb-10 border-gray-200" />
-
-
-        </div>
-    </section>
 
     <script src="main.js"></script>
 </body>

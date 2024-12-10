@@ -103,8 +103,11 @@ body {
   display: flex;
   position: fixed;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
   margin-top: 20px;
+
 }
 
 /* Responsive cho màn hình nhỏ */
@@ -188,6 +191,39 @@ body {
 }
 #update {
   background-color: #008CBA;
+}
+/*input */
+/* CSS cho input field */
+input[type="number"] {
+  width: 300px; /* Độ rộng của input */
+  padding: 10px; /* Khoảng đệm bên trong input */
+  margin: 8px 0; /* Khoảng cách phía trên và dưới */
+  box-sizing: border-box; /* Đảm bảo padding không tăng kích thước tổng */
+  border: 1px solid #ccc; /* Viền của input */
+  border-radius: 4px; /* Bo tròn góc */
+  font-size: 16px; /* Cỡ chữ */
+  transition: border-color 0.2s; /* Hiệu ứng khi hover */
+}
+
+input[type="number"]:focus {
+  border-color: #5bc0de; /* Đổi màu viền khi input được focus */
+  outline: none; /* Bỏ viền xanh dương mặc định khi focus */
+}
+
+/* CSS cho button */
+button {
+  padding: 10px 15px; /* Khoảng đệm của button */
+  background-color: #5bc0de; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền mặc định */
+  border-radius: 4px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị dạng con trỏ khi hover */
+  font-size: 16px; /* Cỡ chữ */
+  transition: background-color 0.2s; /* Hiệu ứng khi hover */
+}
+
+button:hover {
+  background-color: #31b0d5; /* Đổi màu nền khi hover */
 }
 
 

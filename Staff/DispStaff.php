@@ -20,8 +20,15 @@
   <div class="table-container">
 
     <h2 class="text_content">Hồ sơ nhân viên </h2>
+<!--    search-->
+      <div id="box-search" >
+          <form class="search" action="search.php" method="post">
+              <input type="number" name="S_ID"  placeholder="Tìm kiếm thông qua id nhan vien...">
+              <button type="submit" name="save" class="button">Tìm kiếm </button>
+          </form>
+      </div>
 
-    <table>
+      <table>
       <thead>
         <tr>
           <th>ID Nhân Viên</th>
@@ -61,7 +68,7 @@
 
   <div class="center-container">
     <a href="staff.html" class="button">Thêm Mới</a>
-    <a href="index.html" class="button">Tìm Kiếm</a>
+<!--    <a href="index.html" class="button">Tìm Kiếm</a>-->
     <a href="../../dashboard/home.php" class="button">Trang Chủ</a>
   </div>
   <script src="../js/delete.js"></script>

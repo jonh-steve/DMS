@@ -20,7 +20,9 @@ $result = mysqli_query($conn, "SELECT Room_Number,
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retrieve Data</title>
+    <title>Danh Sách vấn đề </title>
+    <link rel="shortcut icon" href="../images/logomeo.png">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>

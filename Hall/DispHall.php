@@ -12,14 +12,14 @@
 <body>
 
   <div class="table-container">
-    <h2 class="text_content">Danh Sách Phòng Học</h2>
+    <h2 class="text_content">Danh Sách khu Ký túc xa</h2>
     <table>
       <thead>
         <tr>
-          <th>Mã Phòng học</th>
-          <th>Tên Phòng học</th>
-          <th>Tổng số chỗ ngồi</th>
-          <th>Số chỗ ngồi còn trống</th>
+          <th>Mã KTX</th>
+          <th>Tên KTX</th>
+          <th>Tổng số chỗ </th>
+          <th>Số chỗ còn trống</th>
           <th>Số sinh viên</th>
           <th>Thao tác</th>
         </tr>
